@@ -1,0 +1,121 @@
+/* 
+body sahifaning asosiy qismi.
+Brauzer odatda body ga avtomatik margin beradi.
+Biz uni 0 qilib olib tashlaymiz.
+*/
+body{
+    margin:0;
+}
+
+
+/*
+.box classi barcha konteynerlar uchun umumiy dizayn beradi.
+Shuning uchun 4 ta div ham shu classdan foydalanadi.
+*/
+.box{
+
+    /* har bir konteyner sahifaning kengligining yarmini egallaydi */
+    width:50%;
+
+    /* sahifa balandligining yarmini egallaydi */
+    height:50vh;
+
+    /*
+    position:absolute elementni aniq joyga qo'yish imkonini beradi
+    top, bottom, left, right ishlatish mumkin
+    */
+    position:absolute;
+
+    /*
+    display:flex element ichidagi matnni markazga qo'yish uchun
+    */
+    display:flex;
+
+    /* gorizontal markaz */
+    justify-content:center;
+
+    /* vertikal markaz */
+    align-items:center;
+
+    /* matn kattaligi */
+    font-size:40px;
+
+    /* matn rangini oq qilamiz */
+    color:white;
+}
+
+
+
+/*
+.box1
+1-konteyner uchun style
+chap yuqori burchakka joylashadi
+*/
+.box1{
+
+    /* fon rang */
+    background:red;
+
+    /* yuqoridan 0 px */
+    top:0;
+
+    /* chapdan 0 px */
+    left:0;
+}
+
+
+
+/*
+.box2
+2-konteyner
+o'ng yuqori burchak
+*/
+.box2{
+
+    /* fon rang */
+    background:blue;
+
+    /* yuqori */
+    top:0;
+
+    /* o'ng tomonga joylash */
+    right:0;
+}
+
+
+
+/*
+.box3
+3-konteyner
+chap past burchak
+*/
+.box3{
+
+    /* fon rang */
+    background:green;
+
+    /* pastki qism */
+    bottom:0;
+
+    /* chap tomonga yopishadi */
+    left:0;
+}
+
+
+
+/*
+.box4
+4-konteyner
+o'ng past burchak
+*/
+.box4{
+
+    /* fon rang */
+    background:orange;
+
+    /* pastdan joylash */
+    bottom:0;
+
+    /* o'ng tomondan joylash */
+    right:0;
+}
