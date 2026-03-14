@@ -1,0 +1,156 @@
+/* body sahifaning asosiy konteyneri */
+body {
+
+    margin: 0;
+    /* brauzer default margin qo'shadi */
+    /* biz uni olib tashlayapmiz */
+
+    font-family: Arial;
+    /* sayt shriftini belgilaymiz */
+
+}
+
+/* header sayting yuqori qismi */
+.header {
+
+    display: flex;
+    /* flexbox yoqiladi */
+    /* elementlar yonma yon chiqadi */
+
+    justify-content: space-between;
+    /* logo chapda menu o'rtada login o'ngda */
+
+    align-items: center;
+    /* elementlarni vertikal markazga qo'yadi */
+
+    padding: 20px;
+    /* header ichidagi bo'sh joy */
+
+    background: #222;
+    /* header fon rangi */
+
+    color: white;
+    /* matn rangi */
+
+    flex-wrap: wrap;
+    /* ekran kichrayganda elementlar pastga tushishi mumkin */
+
+}
+
+/* logo style */
+.logo {
+
+    font-size: 24px;
+    /* matn kattaligi */
+
+    font-weight: bold;
+    /* matn qalin */
+
+}
+
+/* menu konteyneri */
+.menu {
+
+    display: flex;
+    /* menu linklari yonma yon chiqadi */
+
+    gap: 25px;
+    /* linklar orasidagi masofa */
+
+}
+
+/* menu linklari */
+.menu a {
+
+    color: white;
+    /* link rang */
+
+    text-decoration: none;
+    /* link tagidagi chiziqni olib tashlaymiz */
+
+    font-size: 18px;
+    /* matn o'lchami */
+
+}
+
+/* hover effekti */
+.menu a:hover {
+
+    color: orange;
+    /* sichqoncha kelganda rang o'zgaradi */
+
+}
+
+/* login tugmasi */
+.login button {
+
+    padding: 10px 20px;
+    /* tugma ichki joy */
+
+    border: none;
+    /* border olib tashlanadi */
+
+    background: orange;
+    /* fon rang */
+
+    color: white;
+    /* matn rang */
+
+    font-size: 16px;
+    /* matn kattaligi */
+
+    border-radius: 5px;
+    /* burchaklarni yumaloqlash */
+
+    cursor: pointer;
+    /* sichqoncha qo'l ko'rinishiga o'tadi */
+
+}
+
+/* tugma hover */
+.login button:hover {
+
+    background: red;
+    /* rang o'zgaradi */
+
+}
+
+/* ----------------------------- */
+/* RESPONSIVE QISMI */
+/* ----------------------------- */
+
+@media (max-width:768px)
+/* agar ekran 768px dan kichik bo'lsa */
+    {
+
+    .header {
+
+        flex-direction: column;
+        /* elementlar ustma ust chiqadi */
+
+        align-items: flex-start;
+        /* chap tomonga tekislanadi */
+
+    }
+
+    .menu {
+
+        flex-direction: column;
+        /* menu linklari ustma ust chiqadi */
+
+        gap: 10px;
+        /* linklar orasidagi masofa */
+
+        margin-top: 10px;
+        /* yuqoridan bo'sh joy */
+
+    }
+
+    .login {
+
+        margin-top: 10px;
+        /* login tugmasi ham pastga tushadi */
+
+    }
+
+}

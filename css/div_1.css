@@ -3,8 +3,8 @@ body sahifaning asosiy qismi.
 Brauzer odatda body ga avtomatik margin beradi.
 Biz uni 0 qilib olib tashlaymiz.
 */
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
 
@@ -12,36 +12,36 @@ body{
 .box classi barcha konteynerlar uchun umumiy dizayn beradi.
 Shuning uchun 4 ta div ham shu classdan foydalanadi.
 */
-.box{
+.box {
 
     /* har bir konteyner sahifaning kengligining yarmini egallaydi */
-    width:50%;
+    width: 50%;
 
     /* sahifa balandligining yarmini egallaydi */
-    height:50vh;
+    height: 50vh;
 
     /*
     position:absolute elementni aniq joyga qo'yish imkonini beradi
     top, bottom, left, right ishlatish mumkin
     */
-    position:absolute;
+    position: absolute;
 
     /*
     display:flex element ichidagi matnni markazga qo'yish uchun
     */
-    display:flex;
+    display: flex;
 
     /* gorizontal markaz */
-    justify-content:center;
+    justify-content: center;
 
     /* vertikal markaz */
-    align-items:center;
+    align-items: center;
 
     /* matn kattaligi */
-    font-size:40px;
+    font-size: 40px;
 
     /* matn rangini oq qilamiz */
-    color:white;
+    color: white;
 }
 
 
@@ -51,16 +51,16 @@ Shuning uchun 4 ta div ham shu classdan foydalanadi.
 1-konteyner uchun style
 chap yuqori burchakka joylashadi
 */
-.box1{
+.box1 {
 
     /* fon rang */
-    background:red;
+    background: red;
 
     /* yuqoridan 0 px */
-    top:0;
+    top: 0;
 
     /* chapdan 0 px */
-    left:0;
+    left: 0;
 }
 
 
@@ -70,16 +70,16 @@ chap yuqori burchakka joylashadi
 2-konteyner
 o'ng yuqori burchak
 */
-.box2{
+.box2 {
 
     /* fon rang */
-    background:blue;
+    background: blue;
 
     /* yuqori */
-    top:0;
+    top: 0;
 
     /* o'ng tomonga joylash */
-    right:0;
+    right: 0;
 }
 
 
@@ -89,16 +89,16 @@ o'ng yuqori burchak
 3-konteyner
 chap past burchak
 */
-.box3{
+.box3 {
 
     /* fon rang */
-    background:green;
+    background: green;
 
     /* pastki qism */
-    bottom:0;
+    bottom: 0;
 
     /* chap tomonga yopishadi */
-    left:0;
+    left: 0;
 }
 
 
@@ -108,14 +108,14 @@ chap past burchak
 4-konteyner
 o'ng past burchak
 */
-.box4{
+.box4 {
 
     /* fon rang */
-    background:orange;
+    background: orange;
 
     /* pastdan joylash */
-    bottom:0;
+    bottom: 0;
 
     /* o'ng tomondan joylash */
-    right:0;
+    right: 0;
 }
