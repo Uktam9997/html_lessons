@@ -1,0 +1,383 @@
+/* body — sahifaning asosiy konteyneri */
+body {
+
+    margin: 0;
+    /* brauzer avtomatik margin qo‘shadi, biz olib tashlaymiz */
+
+    font-family: Arial;
+    /* sayt shrifti */
+
+    background: #f4f4f4;
+    /* sahifa fon rangi */
+
+}
+
+/* header — yuqori qism */
+.header {
+
+    display: flex;
+    /* flexbox yoqiladi, elementlar yonma yon chiqadi */
+
+    align-items: center;
+    /* elementlar vertikal markazga joylashadi */
+
+    padding: 20px;
+    /* ichki bo‘sh joy */
+
+    background: #222;
+    /* fon rang */
+
+    color: white;
+    /* matn rang */
+
+}
+
+/* logo */
+.logo {
+
+    font-size: 24px;
+    /* matn kattaligi */
+
+    font-weight: bold;
+    /* matn qalin */
+
+    flex: 1;
+    /* chap tomonni egallaydi */
+
+}
+
+/* menu */
+.menu {
+
+    display: flex;
+    /* linklar yonma yon chiqadi */
+
+    gap: 20px;
+    /* orasidagi masofa */
+
+    justify-content: center;
+    /* markazga joylashadi */
+
+    flex: 2;
+    /* o‘rtada joy egallaydi */
+
+}
+
+/* menu link */
+.menu a {
+
+    color: white;
+    /* rang */
+
+    text-decoration: none;
+    /* tagidagi chiziqni olib tashlaymiz */
+
+}
+
+/* hover */
+.menu a:hover {
+
+    color: orange;
+    /* sichqoncha olib borganda rang o‘zgaradi */
+
+}
+
+/* login blok */
+.login {
+
+    flex: 1;
+    /* o‘ng tomonni egallaydi */
+
+    display: flex;
+
+    justify-content: flex-end;
+    /* tugma o‘ngga joylashadi */
+
+}
+
+/* login tugma */
+.login button {
+
+    padding: 10px 20px;
+    /* ichki joy */
+
+    border: none;
+    /* border yo‘q */
+
+    background: orange;
+    /* fon rang */
+
+    color: white;
+    /* matn rang */
+
+    border-radius: 5px;
+    /* burchaklar yumaloq */
+
+    cursor: pointer;
+    /* sichqoncha qo‘lga o‘zgaradi */
+
+}
+
+.login button:hover {
+    background: red;
+}
+
+/* form joylashgan qism */
+.form-section {
+
+    display: flex;
+    /* flexbox */
+
+    justify-content: center;
+    /* gorizontal markaz */
+
+    align-items: center;
+    /* vertikal markaz */
+
+    min-height: calc(100vh - 80px);
+    /* header balandligini hisobga oladi */
+
+}
+
+/* form */
+form {
+
+    background: white;
+    /* fon */
+
+    padding: 30px;
+    /* ichki joy */
+
+    border-radius: 10px;
+    /* yumaloq burchak */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* soya */
+
+    width: 300px;
+    /* kenglik */
+
+    display: flex;
+
+    flex-direction: column;
+    /* elementlar ustma ust chiqadi */
+
+    gap: 10px;
+    /* orasidagi masofa */
+
+}
+
+/* input */
+input {
+
+    padding: 10px;
+    /* ichki joy */
+
+    border: 1px solid #ccc;
+    /* border */
+
+    border-radius: 5px;
+    /* yumaloq */
+
+}
+
+/* form button */
+form button {
+
+    padding: 10px;
+
+    border: none;
+
+    background: orange;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+/* hover */
+form button:hover {
+
+    background: red;
+
+}
+
+/* pastdagi link matn */
+.login-link {
+
+    text-align: center;
+    /* markaz */
+
+    font-size: 14px;
+    /* kichik matn */
+
+    margin-top: 10px;
+    /* yuqoridan joy */
+
+}
+
+/* link */
+.login-link a {
+
+    color: orange;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+/* hover */
+.login-link a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* Footer umumiy dizayni */
+.footer {
+    background-color: #1e1e2f;
+    /* Fon rangi (to‘q rang) */
+    color: #ffffff;
+    /* Matn rangi oq */
+    padding: 40px 20px;
+    /* Ichki bo‘sh joy */
+}
+
+/* Footer ichidagi container */
+.footer-container {
+    display: flex;
+    /* Flexbox ishlatamiz */
+    justify-content: space-between;
+    /* Elementlar orasini ajratadi */
+    flex-wrap: wrap;
+    /* Kichik ekranlarda pastga tushadi */
+    gap: 20px;
+    /* Elementlar orasida masofa */
+}
+
+/* Har bir bo‘lim */
+.footer-section {
+    flex: 1;
+    /* Har bir section teng joy oladi */
+    min-width: 200px;
+    /* Minimum kenglik */
+}
+
+/* Logo (sayt nomi) */
+.footer-logo {
+    font-size: 24px;
+    /* Katta shrift */
+    margin-bottom: 10px;
+    /* Pastdan bo‘sh joy */
+}
+
+/* Oddiy matn */
+.footer-text {
+    font-size: 14px;
+    /* Matn o‘lchami */
+    color: #cccccc;
+    /* Och kulrang */
+}
+
+/* Linklar ro‘yxati */
+.footer-links {
+    list-style: none;
+    /* Nuqtalarni olib tashlaydi */
+    padding: 0;
+    /* Ichki bo‘sh joyni olib tashlaydi */
+}
+
+/* Har bir link elementi */
+.footer-links li {
+    margin-bottom: 8px;
+    /* Pastdan masofa */
+}
+
+/* Linklar dizayni */
+.footer-links a {
+    text-decoration: none;
+    /* Tag chizig‘ini olib tashlaydi */
+    color: #ffffff;
+    /* Oq rang */
+    transition: 0.3s;
+    /* Hover animatsiya */
+}
+
+/* Link ustiga olib borilganda */
+.footer-links a:hover {
+    color: #00adb5;
+    /* Rang o‘zgaradi */
+}
+
+/* Ijtimoiy ikonlar */
+.social-icons a {
+    display: inline-block;
+    /* Yonma-yon chiqadi */
+    margin-right: 10px;
+    /* O‘ngdan masofa */
+    color: #ffffff;
+    /* Rang */
+    text-decoration: none;
+    /* Tag chiziq yo‘q */
+}
+
+/* Hover effekti */
+.social-icons a:hover {
+    color: #00adb5;
+    /* Hover rang */
+}
+
+/* Pastki qism */
+.footer-bottom {
+    text-align: center;
+    /* Markazga tekislash */
+    margin-top: 30px;
+    /* Tepadan masofa */
+    border-top: 1px solid #444;
+    /* Yuqorida chiziq */
+    padding-top: 15px;
+    /* Ichki masofa */
+    font-size: 14px;
+    /* Matn o‘lchami */
+    color: #aaa;
+    /* Kulrang */
+}
+
+/* responsive */
+@media (max-width: 768px) {
+
+    .header {
+
+        flex-direction: column;
+        /* elementlar ustma ust */
+
+        align-items: flex-start;
+        /* chapga */
+
+    }
+
+    .menu {
+
+        flex-direction: column;
+        /* menu pastga */
+
+        width: 100%;
+
+    }
+
+    .login {
+
+        width: 100%;
+
+        justify-content: flex-start;
+        /* tugma chapga */
+
+        margin-top: 10px;
+
+    }
+
+}

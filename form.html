@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Bu qator brauzerga hujjat HTML5 ekanligini aytadi -->
+
+<html lang="uz">
+<!-- html — butun sahifani o‘rab turadi -->
+<!-- lang="uz — sahifa tili o‘zbek ekanligini bildiradi -->
+
+<head>
+    <!-- head — brauzer uchun ma'lumotlar joylashadigan qism -->
+
+    <meta charset="UTF-8">
+    <!-- UTF-8 — barcha harflarni to‘g‘ri chiqaradi -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bu qator saytni telefon va kichik ekranlarda to‘g‘ri ko‘rsatadi -->
+
+    <title>Header + Form</title>
+    <!-- Brauzer tepasida chiqadigan sahifa nomi -->
+
+    <link rel="stylesheet" href="css/form.css">
+    <!-- CSS faylni ulaymiz -->
+
+</head>
+
+<body>
+    <!-- body — foydalanuvchi ko‘radigan qism -->
+
+    <header class="header">
+        <!-- header — saytning yuqori qismi -->
+
+        <div class="logo">
+            <!-- logo uchun alohida blok -->
+            MySite
+        </div>
+
+        <nav class="menu">
+            <!-- nav — menyu uchun ishlatiladi -->
+
+            <a href="#">Home</a>
+            <!-- menyu link -->
+
+            <a href="#">About</a>
+            <!-- menyu link -->
+
+            <a href="#">Courses</a>
+            <!-- menyu link -->
+
+            <a href="#">Contact</a>
+            <!-- menyu link -->
+
+        </nav>
+
+        <div class="login">
+            <!-- login tugma uchun joy -->
+
+            <button onclick="location.href='login.html'">
+                <!-- tugma bosilganda login sahifaga o'tadi -->
+                Login
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+        <!-- main — sahifaning asosiy qismi -->
+
+        <section class="form-section">
+            <!-- form joylashadigan qism -->
+
+            <form>
+                <!-- form — ma'lumot yuborish uchun -->
+
+                <h2>Ro‘yxatdan o‘tish</h2>
+                <!-- sarlavha -->
+
+                <label>Ism</label>
+                <!-- input nomi -->
+
+                <input type="text" placeholder="Ismingiz">
+                <!-- foydalanuvchi ism yozadi -->
+
+                <label>Email</label>
+                <!-- email label -->
+
+                <input type="email" placeholder="Email">
+                <!-- email kiritish -->
+
+                <label>Parol</label>
+                <!-- parol label -->
+
+                <input type="password" placeholder="Parol">
+                <!-- parol kiritish -->
+
+                <button type="submit">Yuborish</button>
+                <!-- formni yuborish tugmasi -->
+
+                <p class="login-link">
+                    <!-- pastdagi matn uchun blok -->
+
+                    Sizda profil (login, parol) bormi?
+                    <!-- oddiy matn -->
+
+                    <a href="#">Kirish</a>
+                    <!-- login sahifaga o'tish -->
+
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer boshlanishi -->
+    <footer class="footer">
+        <!-- Footer ichidagi umumiy konteyner -->
+        <div class="footer-container">
+
+            <!-- Logo yoki sayt nomi -->
+            <div class="footer-section">
+                <h2 class="footer-logo">MyWebsite</h2> <!-- Sayt nomi -->
+                <p class="footer-text">Biz bilan eng so‘nggi yangiliklardan xabardor bo‘ling</p> <!-- Tavsif -->
+            </div>
+
+            <!-- Navigatsiya linklar -->
+            <div class="footer-section">
+                <h3>Bo‘limlar</h3> <!-- Bo‘lim sarlavhasi -->
+                <ul class="footer-links">
+                    <li><a href="#">Bosh sahifa</a></li> <!-- Link -->
+                    <li><a href="#">Xizmatlar</a></li> <!-- Link -->
+                    <li><a href="#">Biz haqimizda</a></li> <!-- Link -->
+                    <li><a href="#">Bog‘lanish</a></li> <!-- Link -->
+                </ul>
+            </div>
+
+            <!-- Ijtimoiy tarmoqlar -->
+            <div class="footer-section">
+                <h3>Ijtimoiy tarmoqlar</h3> <!-- Sarlavha -->
+                <div class="social-icons">
+                    <a href="#">Facebook</a> <!-- Facebook link -->
+                    <a href="#">Telegram</a> <!-- Telegram link -->
+                    <a href="#">Instagram</a> <!-- Instagram link -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pastki qism (copyright) -->
+        <div class="footer-bottom">
+            <p>© 2026 MyWebsite | Barcha huquqlar himoyalangan</p> <!-- Mualliflik -->
+        </div>
+    </footer>
+    <!-- Footer tugashi -->
+
+</body>
+
+</html>
