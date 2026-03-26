@@ -1,0 +1,289 @@
+/* BODY */
+body {
+
+    margin: 0;
+    /* brauzer marginini olib tashlaymiz */
+
+    font-family: 'Segoe UI', sans-serif;
+    /* zamonaviy shrift */
+
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    /* gradient fon (chiroyli fon) */
+
+}
+
+/* HEADER */
+.header {
+
+    display: flex;
+    /* flexbox */
+
+    justify-content: space-between;
+    /* chap va o‘ngga ajratadi */
+
+    align-items: center;
+    /* vertikal markaz */
+
+    padding: 20px 40px;
+    /* ichki joy */
+
+    background: #1e1e2f;
+    /* to‘q fon */
+
+    color: white;
+    /* matn rang */
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* pastga soya */
+
+}
+
+/* LOGO */
+.logo {
+
+    font-size: 28px;
+    /* kattaroq */
+
+    font-weight: bold;
+    /* qalin */
+
+    color: #ff9800;
+    /* rang */
+
+}
+
+/* MENU */
+.menu a {
+
+    color: white;
+    /* rang */
+
+    margin: 0 15px;
+    /* orasidagi joy */
+
+    text-decoration: none;
+    /* chiziq yo‘q */
+
+    font-size: 18px;
+    /* kattalik */
+
+    transition: 0.3s;
+    /* animatsiya */
+
+}
+
+/* HOVER */
+.menu a:hover {
+
+    color: #ff9800;
+    /* hover rang */
+
+}
+
+/* KATEGORIYA */
+.categories {
+
+    padding: 30px;
+    /* ichki joy */
+
+}
+
+/* TITLE */
+.categories h2 {
+
+    margin-bottom: 15px;
+
+}
+
+/* LIST */
+.category-list {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ITEM */
+.category {
+
+    padding: 10px 20px;
+
+    background: #ff9800;
+
+    color: white;
+
+    border-radius: 30px;
+    /* pill style */
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+/* HOVER */
+.category:hover {
+
+    background: #ff5722;
+
+    transform: scale(1.05);
+    /* kattalashadi */
+
+}
+
+/* PRODUCTS */
+.products {
+
+    padding: 30px;
+
+}
+
+/* LIST */
+.product-list {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+/* CARD */
+.card {
+
+    background: white;
+
+    width: 260px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+    /* rasm chiqib ketmasligi uchun */
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+
+}
+
+/* HOVER */
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+/* IMAGE */
+.card img {
+
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+    /* rasm buzilmaydi */
+
+}
+
+/* CONTENT */
+.card h3 {
+
+    margin: 10px;
+
+}
+
+/* PRICE */
+.price {
+
+    color: #4caf50;
+
+    font-weight: bold;
+
+    margin: 0 10px;
+
+}
+
+/* TEXT */
+.card p {
+
+    margin: 10px;
+
+    font-size: 14px;
+
+    color: #555;
+
+}
+
+/* BUTTON */
+.card button {
+
+    margin: 10px;
+
+    padding: 10px;
+
+    width: 90%;
+
+    border: none;
+
+    background: #ff9800;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+/* BUTTON HOVER */
+.card button:hover {
+
+    background: #e65100;
+
+}
+
+/* FOOTER */
+.footer {
+
+    background: #1e1e2f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+
+    .header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .product-list {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+}
